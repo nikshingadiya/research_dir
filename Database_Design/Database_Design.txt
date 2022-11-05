@@ -1,0 +1,80 @@
+Stocks: *including stock#, companyName, ExchangeMarket, Description
+
+Customers: *including CustomerID, Name, Contact
+
+Portfolio: CustomerName, currentValue
+
+Logs: *including stock#, openPrice, closePrice, *date
+
+Transactions: CustomerID, Portfolio, stock, quantity, price, date, time,*TransactionID
+
+
+
+Cus many to many stocks 
+Cus one to many portfolio
+cus one to many transactions
+
+portfolio one to many stocks
+portfolio one to many transaction
+transaction many to one or more stock
+stock one to many logs
+
+
+The information you need to collect and records is:
+
+Books: *including ISBN#, COPY#, Title, Author1, Author2, Year, Publisher.
+
+BookCases: *including Case#, Street, County
+
+Users:*including UserID, Name, Address, Contact
+
+Log: BookInfo, UserInfo, BookCaseInfo, *TimeStamp, Borrow/Return 
+
+
+book many to one bookcases
+
+book one to users
+
+book one to have many logs
+
+user one to have many logs
+
+Bookcase many to many logs
+
+
+week 2:
+
+What are the attributes of the relation:  GradeBook
+
+What are the tuples of the relation (pick one): 001 Harry Magic 90 90 80 100
+
+What is the degree of the relation: 7
+
+What is the cardinality of the relation: 6
+
+What is the possible domain of attribute ID: 000 to 399
+
+What is the possible domain of attribute Name: string
+
+What is the possible domain of attribute Major: string
+
+What is the possible domain of attribute Quiz1 - 4:  0 to 100
+
+
+If there is no duplicate name of people:  
+
+What might be candidate keys? Name
+
+What might be the primary key? ID
+
+What might be the alternate key? Name
+
+
+
+
+
+
+
+
+
+
