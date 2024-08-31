@@ -70,10 +70,114 @@ What might be the primary key? ID
 What might be the alternate key? Name
 
 
+week 2:
+Gradebook(Underline(ID),Name,Fk(Major),Quiz1,Quiz2,Quiz3,Quiz4)
+
+
+
+Convert ERD to Relation model
+
+Location(*ID ,State,City,Street,Zipcode,Country)
+
+Galleries(*GalleryNum,Name,Phone,Hours,Introduction,ID(fk))
+
+Drawings(*DrawingNum,Title,size,Material,Date,GalleryNum(fk))
+
+Artiest(*ArtistNum,Name,Phone,Birthday,Email)
+
+Drawings_artists(DrawingNum(fk),Artistnum(fk))
+
+Aritest_Artist(ArtistNum(fk),Artist1(fk))
 
 
 
 
+
+
+Convert ERD to Relation model
+
+Location(*ID ,State,City,Street,Zipcode,Country,GalleryNum(fk))
+
+Galleries(*GalleryNum,Name,Phone,Hours,Introduction))
+
+Drawings(*DrawingNum,Title,size,Material,Date,GalleryNum(fk),ArtistNum(fk))
+
+Artiest(*ArtistNum,Name,Phone,Birthday,Email,Artist1(fk))
+
+
+
+What is the name of this relation: MotorVehicleCollisions
+
+What is the degree of this relation: 11
+
+What is the cardinality of this relation: 9
+
+What might be the primary key of this relation: CollisionID
+
+What is the domain of ZIP CODE: start with 1 and last 4 digit (0 to 9)
+
+What is the domain of CRASH DATE: Date
+
+
+
+
+
+Cars(*CarID,Manufactor,Model,Year)
+
+Drivers(Name,*EmployeeID,SSN,DOB,Phone,DivisionName(fk),Mentor_EMployeedId(fk))
+
+
+Car_driver(*carID(fk),*EmployeeId(fk))
+
+Depedents(*ID,Name,Gender,Dob,EmployeeId(fk))
+
+Division(*DivisionName,Location,Phone,Email)
+
+friends(*EmployeeID1(fk),*EmployeeID2(fk))
+
+
+week 4:
+PetsCare wants to record information about customers, pets, staff, visits. Claire will be available to meet via Zoom tomorrow to discuss details. You should prepare questions for building the DBMS.
+
+
+
+
+
+Customers -> info ? = CustomerID, FirstName, LastName, Address, Email, Phone, DoB, PaymentInfo, JoinDate. CustomerID is the identifier.
+
+pets  -> info ? CustomerID, Pet#, NickName, Address, Email, Phone, Category, Species/Breed, Species/Breed Description, Gender, DoB, Notes. CustomerID and Pet# together as the identifier.
+
+staff  -> info ? name ,staffid,email,contactno
+
+visits -> info ? timestamp ,visitsrid
+
+
+
+customer 1-----------0,n pets
+
+staff 0,n-------------0,n pet
+
+customer 1-----------0,n visit
+
+
+pets  0,n -------1,n visit
+
+
+staff 1 --- 0,n visits
+
+customer  1,n---refered---0,n customer
+
+staff 0,n -------1 supervisior
+
+
+customer 
+
+what is relation among them 
+
+
+The interest of the business, what information should be recorded, what might be the entities for holding the information, 
+
+what might be used as identities, etc.
 
 
 
